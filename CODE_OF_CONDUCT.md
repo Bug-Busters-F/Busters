@@ -21,10 +21,6 @@ Este Código de Conduta visa estabelecer um ambiente de trabalho colaborativo, r
 
 O não cumprimento deste código de conduta pode resultar em ações corretivas, que variam desde advertências até a exclusão da equipe, dependendo da gravidade do comportamento.
 
-## Procedimento para Denúncias
-
-Qualquer membro da equipe que testemunhar ou for sujeito a comportamentos inaceitáveis deve relatar o incidente ao Scrum Master ou a todos os membros da equipe nas reuniões de equipe.
-
 ## Escopo
 
 Este código de conduta aplica-se a todas as atividades relacionadas ao projeto, incluindo reuniões de equipe, trabalho em sala de aula, e qualquer comunicação digital ou presencial entre membros da equipe.
