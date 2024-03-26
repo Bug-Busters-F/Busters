@@ -20,6 +20,7 @@ Garantir uma colaboração eficaz e eficiente entre a equipe.
 - Python v3
 - MySQL
 - Figma
+- Discord
 
 ### Visual Studio Code
 
@@ -27,7 +28,7 @@ No Visual Studio Code, utilizaremos algumas extensões para facilitar na organiz
 
 - [Auto Complete Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag) - auto close HTML tags
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) - Launch a development local Server with live reload feature
-- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - escreva markdown facilmente
+- [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - escreva markdown facilmente {markdown-all-in-one}
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - Markdown linting and style checking
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - formata código CSS, JS etc.
 - [IntelliSense for CSS class names](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion) - autocompleta classes (como do Bootstrap) - autocomplete classes found in your workspace or external files referenced through the link element.
@@ -69,6 +70,8 @@ code --install-extension KevinRose.vsc-python-indent
 
 ## Code Styling
 
+### Python
+
 [Python official guidelines - PEP8](https://peps.python.org/pep-0008/).
 
 Algumas extensões indicadas lá em cima auxiliam na formatação do código.
@@ -77,3 +80,9 @@ Alguns atalhos do vscode:
 
 - `Ctrl + Shift + M`: abre a aba do relatório de Problemas
 - `Shift + alt + O`|`Ctrl + Shift + I` - formata o código
+
+## Markdown
+
+Veja o [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+
+Instale as extensões de Markdown para facilitar o uso no [vscode - *clique aqui*](#visual-studio-code).
