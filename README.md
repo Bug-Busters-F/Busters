@@ -2,16 +2,16 @@
 
 GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters)
 
-- Documento de Apresentação do Projeto
+- Documento de [Apresentação do Projeto](https://docs.google.com/document/d/1LkdevDjwFD578DrhmSQ6BkNnMOqmkkXY/edit?usp=sharing&ouid=108813393467315987167&rtpof=true&sd=true)
 - [Calendário](#calendário)
 - [Requisitos do Produto](#requisitos)
 - [Rascunho do Produto](./RASCUNHO_PRODUTO.md)
-- Product Backlog
+- [Product Backlog](https://docs.google.com/spreadsheets/d/1RvZleIbzwFYx72CYqnLYcuzUv_oSYyLeIR7zntAZfyE/edit?usp=sharing)
 - Product Roadmap
 - Sprint 1
   - [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
   - Sprint Backlog
-  - Burndown chart
+  - Burndown [chart](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
 - [Sprint Review](#sprint-review---apresentação)
 - [Bug Busters - Scrum Team](./BUG_BUSTERS.md)
 - [Código de Permanência](./CODE_OF_CONDUCT.md)
