@@ -10,6 +10,7 @@
 
 - Definir User Stories da 1ª Sprint
 - Fazer o **Sprint Backlog**  - transformar as US da 1ª sprint em tarefas para o Sprint Backlog
+- Criar as estimativas/pontos de cada tarefa dessa Sprint
 
 ## Próximos Passos
 
