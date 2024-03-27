@@ -10,7 +10,7 @@ GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters)
 - Product Roadmap
 - Sprint 1
   - [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
-  - Sprint Backlog
+  - [Sprint Backlog](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
   - Burndown [chart](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
 - [Sprint Review](#sprint-review---apresentação)
 - [Bug Busters - Scrum Team](./BUG_BUSTERS.md)

@@ -1,5 +1,19 @@
 # Sprint 1 - Sprint Planning Meeting
 
+## Estimativas
+
+| Valor | Significado |
+| :---: | :---------: |
+| 0 | muito fácil |
+| 1, 2, 3 | fáceis |
+| 5 | |
+| 8 | 1 dia de trab.|
+| 13 | 1,5 dias |
+| 20 | 2 dias |
+
+- Colocar seu **nome** na tarefa e  **data de início**
+- Colocar a **data de término**
+
 ## Requisitos para essa reunião
 
 - Definir o produto conforme requisitos
