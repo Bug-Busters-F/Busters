@@ -86,3 +86,53 @@ Alguns atalhos do vscode:
 Veja o [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 Instale as extensões de Markdown para facilitar o uso no [vscode - *clique aqui*](#visual-studio-code).
+
+## Git / GitHub
+
+1. Ter uma cópia do repositório do projeto na sua máquina
+2. Add modificações ao stage
+3. Commit essas modificações
+4. Git pull para trazer modificações do repo remoto
+5. Git push seus commits para o repo remoto
+
+```sh
+# clonar projeto - Criar uma cópia do repositório na sua máquina
+git clone https://github.com/Fatec-Bug-Busters/scrum-academy.git
+
+# Entrar no diretório do projeto
+cd scrum-academy
+```
+
+```sh
+# Conferir se seu nome e email estão configurados
+git config user.name
+git config user.email
+
+# Configurar nome e e-mail
+git config --global user.name "Meu Nome"
+git config --global user.email "email@email.com"
+```
+
+```sh
+# Mostra informações dos commits que existem no repo
+git log
+
+# Mostra modificações no repo desde o último commit, e os arquivos que estão em Stage
+git status
+
+# add todos os arquvos do diretório atual ao Stage
+git add .
+# add somente dois arquivos ao Stage
+git add arquivo-1 arquivo-2
+
+# commit / Grava as mudanças presentes no Stage
+git commit -m "<mensagem>"
+```
+
+```sh
+# Traz novos commits presentes no repo remoto
+git pull
+
+# Envia seus commits para o repo remoto
+git push
+```
