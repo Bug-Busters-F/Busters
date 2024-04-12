@@ -90,10 +90,11 @@ Instale as extensões de Markdown para facilitar o uso no [vscode - *clique aqui
 ## Git / GitHub
 
 1. Ter uma cópia do repositório do projeto na sua máquina
-2. Add modificações ao stage
-3. Commit essas modificações
-4. Git pull para trazer modificações do repo remoto
-5. Git push seus commits para o repo remoto
+2. Faz as suas modificações
+3. Add modificações ao stage
+4. Commit essas modificações
+5. Git pull para trazer modificações do repo remoto
+6. Git push seus commits para o repo remoto
 
 ```sh
 # clonar projeto - Criar uma cópia do repositório na sua máquina
