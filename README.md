@@ -1,29 +1,30 @@
 # API - Bug Busters
 
-GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters)
+GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters/Busters.git) | Github do Produto: [Scrum Academy](https://github.com/Fatec-Bug-Busters/scrum-academy.git)
 
 - Documento de [Apresentação do Projeto](https://docs.google.com/document/d/1LkdevDjwFD578DrhmSQ6BkNnMOqmkkXY/edit?usp=sharing&ouid=108813393467315987167&rtpof=true&sd=true)
-- [Calendário](#calendário)
 - [Requisitos do Produto](#requisitos)
 - [Rascunho do Produto](./RASCUNHO_PRODUTO.md)
 - [Product Backlog](https://docs.google.com/spreadsheets/d/1RvZleIbzwFYx72CYqnLYcuzUv_oSYyLeIR7zntAZfyE/edit?usp=sharing)
-- Product Roadmap
-- Sprint 1
-  - [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
-  - [Sprint Backlog](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
-  - Burndown [chart](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
+- [Product Roadmap](https://github.com/Fatec-Bug-Busters/scrum-academy/blob/main/src/static/images/Roadmap.jpg)
 - [Sprint Review](#sprint-review---apresentação)
 - [Bug Busters - Scrum Team](./BUG_BUSTERS.md)
 - [Código de Permanência](./CODE_OF_CONDUCT.md)
 - -> [Passos Futuros](#passos-futuros)
 
-## Calendário
+## Artefatos das Sprints
 
-- 1ª sprint - 25/03 a 14/04 (entrega no GitHub) - **Sprint Review 16/04**
-- 2ª sprint - 15/04 a 05/05
-- 3ª sprint - 06/05 a 26/05
-- 4ª sprint - 27/05 a 16/06
-- Feira de Soluções 27/06
+### Sprint 1
+
+- [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
+- [Sprint Backlog](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
+- Burndown [chart](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
+
+### Sprint 2
+
+- [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
+- [Sprint Backlog](https://docs.google.com/spreadsheets/d/1C5hCdCJvZeF6iiyMNWqBQpmMm3pTTDkpBEztyGCg9bM/edit?usp=sharing)
+- [Burndown chart](https://docs.google.com/spreadsheets/d/1C5hCdCJvZeF6iiyMNWqBQpmMm3pTTDkpBEztyGCg9bM/edit?usp=sharing)
 
 ## Público Alvo
 
@@ -104,12 +105,3 @@ Em outro momento serão apresentados também  (possivelmente no Sprint Retrospec
 ## Avaliação do grupo
 
 - Criar um form para avaliações parciais e final (com totalização)
-
-## Passos futuros
-
-- [Overview dos eventos do Scrum]
-- Instalação das ferramentas (ver em BUG_BUSTERS.md) e extensões do vscode
-- Code Styling
-- Vamos usar o template de commits?
-  - add ao BUG_BUSTERS como instalar e usar esse template, e add aos exemplos
-- Uso do GitHub (Projects) ao invés do Jira
