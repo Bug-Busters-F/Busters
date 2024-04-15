@@ -4,13 +4,16 @@ Garantir uma colaboração eficaz e eficiente entre a equipe.
 
 ## Integrantes
 
-- Matheus Valim Nogueira - PO
-- Wesley Fonseca Diniz Gonçalves - SM
-- Diego Castilho Lorenceto do Santos - ST
-- Davi Miyake Batista - ST
-- Vinicius Elias Carvalho Ribeiro - ST
-- Gabriel Viell Castilho - ST
-- Allan Couto Gomes Coutinho - ST
+| Função |Nome | GitHub |
+| :----: | :-- | -----: |
+| Product Owner |   Diego Castilho        |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/DigoCast)              |
+| Scrum Master  | Wesley Gonçalves |       [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/WesleyGoncalves)     |
+| Team Member   | Davi Miyake             |          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/DaviMBDev)        |
+| Team Member   | Gabriel Viell           |          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/GabrielViellCastilho)        |
+| Team Member   | Vinicius Elias             |          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ViniElias)        |
+| Team Member   | Allan Couto             |          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/allancouto)        |
+
+![Bug Busters](./src/static/images/bug-busters-logo-black.jpg)
 
 ## Ferramentas que iremos utilizar
 
@@ -18,7 +21,6 @@ Garantir uma colaboração eficaz e eficiente entre a equipe.
 - Git
 - GitHub
 - Python v3
-- MySQL
 - Figma
 - Discord
 
@@ -43,6 +45,7 @@ No Visual Studio Code, utilizaremos algumas extensões para facilitar na organiz
 - [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort) - sort the Python imports
 - [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Doc string generator
 - [Python Indent](https://marketplace.visualstudio.com/items?itemName=KevinRose.vsc-python-indent) - correct indentation
+- [Jinja - Flask](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja) - Colore sintaxe do Jinja
 
 #### Instalação das extensões no vscode
 
@@ -66,6 +69,7 @@ code --install-extension ms-python.black-formatter
 code --install-extension ms-python.isort
 code --install-extension njpwerner.autodocstring
 code --install-extension KevinRose.vsc-python-indent
+code --install-extension wholroyd.jinja
 ```
 
 ## Code Styling
