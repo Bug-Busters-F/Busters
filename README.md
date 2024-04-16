@@ -14,17 +14,10 @@ GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters/Busters.git) | Github
 
 ## Artefatos das Sprints
 
-### Sprint 1
-
-- [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
+- [Sprint Planning Meeting](./Reunioes/Sprint-planning-meeting.md)
 - [Sprint Backlog](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
 - Burndown [chart](https://docs.google.com/spreadsheets/d/1YiW2DtCyta22_vNEH_LkrIirSDu7Xk-9TqdXTQucmNI/edit?usp=sharing)
-
-### Sprint 2
-
-- [Sprint Planning Meeting](./Reunioes/Sprint-1-planning-meeting.md)
-- [Sprint Backlog](https://docs.google.com/spreadsheets/d/1C5hCdCJvZeF6iiyMNWqBQpmMm3pTTDkpBEztyGCg9bM/edit?usp=sharing)
-- [Burndown chart](https://docs.google.com/spreadsheets/d/1C5hCdCJvZeF6iiyMNWqBQpmMm3pTTDkpBEztyGCg9bM/edit?usp=sharing)
+- [Sprint Review](./Reunioes/Sprint-review.md)
 
 ## Público Alvo
 
@@ -66,17 +59,20 @@ Tempo: 4 a 5 min * **NADA MAIS**
 Apresentar:
 
 - A equipe com foto de cada integrante, nome da equipe e papel de cada pessoa
-- Objetivo do projeto (temática e problema) / Visão do Produto
+- Objetivo do projeto (temática e problema) / Visão do Produto, Requisitos do cliente
 - Backlog do Produto completo e RoadMap (Plano de entregas)
   - Focar no que será entregue em cada sprint e não nas US, falando rapidamente
 - Backlog da Sprint (funcionalidades e Wireframes)
   - dizer apenas o que está sendo entregue (valor) **nessa sprint**. Breve explicação. Por exemplo, nesta sprint, estamos apresentando X, Y, Z.
-- Burndown chart
 - Tecnologias empregas na Sprint (HTML, ..., inclusive Discord etc) - pode ser um slide com os logos das plataformas e seus nomes embaixo
 - Mostrar o software rodando
   - Levar também um Vídeo ou GIF animado do software rodando, como plano B
 - Agradecimentos finais - com um **QR do GitHub do grupo**
 - **DICA DE OURO**: Você estará vendendo o produto - postura, tom de voz, foca na solução
+- Mostrar mais o produto
+- Usar todo o tempo da apresentação - 5 min
+- Pensar na visão do cliente
+- Burndown chart, Backlog da Sprint
 
 Leve também:
 
