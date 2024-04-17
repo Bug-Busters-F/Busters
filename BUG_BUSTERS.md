@@ -72,6 +72,17 @@ code --install-extension KevinRose.vsc-python-indent
 code --install-extension wholroyd.jinja
 ```
 
+### Configurar a extensão Black Formatter
+
+Apertar `Ctrl + Shift + P` no vscode, digitar "User Settings JSON" e apertar em `Preferences: Open User Settings (JSON)`
+
+Digita no início do arquivo após `{`:
+
+```json
+"python.formatting.provider": "black",
+"editor.formatOnSave": true,
+```
+
 ## Code Styling
 
 ### Python
