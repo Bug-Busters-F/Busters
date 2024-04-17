@@ -132,6 +132,11 @@ git add arquivo-1 arquivo-2
 
 # commit / Grava as mudanças presentes no Stage
 git commit -m "<mensagem>"
+
+# Mudar para branch dev
+git checkout dev
+# Mudar para branch main
+git checkout main
 ```
 
 ```sh
