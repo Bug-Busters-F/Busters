@@ -13,7 +13,7 @@ Garantir uma colaboração eficaz e eficiente entre a equipe.
 | Team Member   | Vinicius Elias             |          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ViniElias)        |
 | Team Member   | Allan Couto             |          [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/allancouto)        |
 
-![Bug Busters](./src/static/images/bug-busters-logo-black.jpg)
+![Bug Busters](./assets/bug-busters-logo-black.jpg)
 
 ## Como contribuir
 
@@ -199,12 +199,3 @@ Alguns atalhos do vscode:
 Veja o [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 Instale as extensões de Markdown para facilitar o uso no [vscode - *clique aqui*](#visual-studio-code).
-
-
-## Theming - CSS
-
-Usar as classes
-
-color primary
-color secondary
-...
