@@ -15,6 +15,85 @@ Garantir uma colaboração eficaz e eficiente entre a equipe.
 
 ![Bug Busters](./src/static/images/bug-busters-logo-black.jpg)
 
+## Como contribuir
+
+### Fazer uma cópia do repo
+
+```sh
+# Clonar o repo
+git clone https://github.com/Fatec-Bug-Busters/scrum-academy.git
+
+cd scrum-academy/
+```
+
+### Branches
+
+```sh
+# Ver branch ativo
+git branch
+# irá aparecer os branches existentes. O branch ativo é aquele que tiver marcado com * e estiver em verde (no Git bash).
+
+# Troca para o branch 'dev'
+git checkout dev
+```
+
+### Executar localmente
+
+```sh
+# Ativar ambiente virtual
+# Windows - git bash
+. /venv/Scripts/activate
+# Linux
+. /venv/bin/activate
+
+# instalar as dependências
+cd src/
+pip install -r requirements.txt
+
+# rodar o projeto localmente
+flask run --debug
+```
+
+### Fazer Commit
+
+Envie sempre para o branch `dev`. Ver [Branches](#branches)
+
+```sh
+# Garanta que você está na pasta do projeto
+pwd
+# resposta esperada:  ......../scrum-academy
+
+# Add as modificações
+git add .     # add todas as modificações para serem comitadas
+# ou
+git add src/file1 src/file2  # add file1 e file2 presentes em 'src' para serem comitados
+
+# Faz o commit
+git commit -m "O que o meu commit está modificando/adicionando."  # altere a mensagem. Tente explicar suscintamente o que o seu commit está adicionando ou alterando
+# obs.: você pode commitar uma coisa de cada vez. Por ex.: primeiro commita o Header, depois commita o Footer, em 2 commits.
+```
+
+### Enviar suas modificações
+
+Envie sempre para o branch `dev`. Ver [Branches](#branches)
+
+Há dois repos com os quais estamos trabalhando:
+
+1. O repo remoto (no GitHub) que centraliza as modificações que todos fazem. Funciona como um servidor
+2. O repo local (na sua máquina) que é uma cópia do repo remoto.
+
+```sh
+# Garanta que você está no branch 'dev'
+# ver Branches
+
+# Atualiza o repo local - puxa do repo remoto os últimos commits
+git pull
+# se aparecer uma mensagem sobre conflito, grita.
+
+# Envia seus novos commits para o repo remoto
+git push
+```
+
 ## Ferramentas que iremos utilizar
 
 - Visual Studio Code
