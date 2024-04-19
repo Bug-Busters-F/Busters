@@ -68,8 +68,17 @@ git add .     # add todas as modificações para serem comitadas
 # ou
 git add src/file1 src/file2  # add file1 e file2 presentes em 'src' para serem comitados
 
+# Mostra modificações no repo desde o último commit, e os arquivos que estão em Stage
+git status
+# Resultado:
+#   On branch dev - indica que vc está no branch dev
+#   Changes to be committed - o que vc add ao stage
+#   Changes not staged for commit - o que NÃO será commitado
+#   Untracked files - arquivos novos que não serão commitados
+
 # Faz o commit
-git commit -m "O que o meu commit está modificando/adicionando."  # altere a mensagem. Tente explicar suscintamente o que o seu commit está adicionando ou alterando
+git commit -m "O que o meu commit está modificando/adicionando."
+# altere a mensagem. Tente explicar suscintamente o que o seu commit está adicionando ou alterando
 # obs.: você pode commitar uma coisa de cada vez. Por ex.: primeiro commita o Header, depois commita o Footer, em 2 commits.
 ```
 
@@ -93,6 +102,16 @@ git pull
 # Envia seus novos commits para o repo remoto
 git push
 ```
+
+### Resumo
+
+1. Ter uma cópia do repositório do projeto na sua máquina
+2. Faz as suas modificações
+3. Navegar para o diretório raiz do projeto
+4. Add modificações ao stage
+5. Commit essas modificações
+6. Git pull para trazer modificações do repo remoto
+7. Git push seus commits para o repo remoto
 
 ## Ferramentas que iremos utilizar
 
@@ -181,58 +200,11 @@ Veja o [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 
 Instale as extensões de Markdown para facilitar o uso no [vscode - *clique aqui*](#visual-studio-code).
 
-## Git / GitHub
 
-1. Ter uma cópia do repositório do projeto na sua máquina
-2. Faz as suas modificações
-3. Add modificações ao stage
-4. Commit essas modificações
-5. Git pull para trazer modificações do repo remoto
-6. Git push seus commits para o repo remoto
+## Theming - CSS
 
-```sh
-# clonar projeto - Criar uma cópia do repositório na sua máquina
-git clone https://github.com/Fatec-Bug-Busters/scrum-academy.git
+Usar as classes
 
-# Entrar no diretório do projeto
-cd scrum-academy
-```
-
-```sh
-# Conferir se seu nome e email estão configurados
-git config user.name
-git config user.email
-
-# Configurar nome e e-mail
-git config --global user.name "Meu Nome"
-git config --global user.email "email@email.com"
-```
-
-```sh
-# Mostra informações dos commits que existem no repo
-git log
-
-# Mostra modificações no repo desde o último commit, e os arquivos que estão em Stage
-git status
-
-# add todos os arquvos do diretório atual ao Stage
-git add .
-# add somente dois arquivos ao Stage
-git add arquivo-1 arquivo-2
-
-# commit / Grava as mudanças presentes no Stage
-git commit -m "<mensagem>"
-
-# Mudar para branch dev
-git checkout dev
-# Mudar para branch main
-git checkout main
-```
-
-```sh
-# Traz novos commits presentes no repo remoto
-git pull
-
-# Envia seus commits para o repo remoto
-git push
-```
+color primary
+color secondary
+...
