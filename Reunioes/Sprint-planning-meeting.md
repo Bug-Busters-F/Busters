@@ -40,7 +40,6 @@
   - Referências e Bibliografias nos conteúdos
 - Code Styling - `Shift + alt + f` (Windows) | `Ctrl + Shift + I` (linux) - beautify code
 
-
 ### Próximos passos
 
 - Página de conteúdo: Seção Quiz - modal
