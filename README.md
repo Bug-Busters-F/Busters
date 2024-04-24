@@ -100,3 +100,17 @@ Em outro momento serão apresentados também  (possivelmente no Sprint Retrospec
 ## Avaliação do grupo
 
 - Criar um form para avaliações parciais e final (com totalização)
+
+
+## Autores
+
+|    Função     | Nome             |                                                                                                                                               GitHub |
+| :-----------: | :--------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Product Owner | Diego Castilho   |             [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/DigoCast) |
+| Scrum Master  | Wesley Gonçalves |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/WesleyGoncalves) |
+|  Team Member  | Davi Miyake      |            [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/DaviMBDev) |
+|  Team Member  | Gabriel Viell    | [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/GabrielViellCastilho) |
+|  Team Member  | Vinicius Elias   |            [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ViniElias) |
+|  Team Member  | Allan Couto      |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/allancouto) |
+
+![Bug Busters](./assets/bug-busters-logo-black.jpg)
