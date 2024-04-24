@@ -8,9 +8,8 @@ GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters/Busters.git) | Github
 - [Product Backlog](https://docs.google.com/spreadsheets/d/1RvZleIbzwFYx72CYqnLYcuzUv_oSYyLeIR7zntAZfyE/edit?usp=sharing)
 - [Product Roadmap](https://github.com/Fatec-Bug-Busters/scrum-academy/blob/main/src/static/images/Roadmap.jpg)
 - [Sprint Review](#sprint-review---apresentação)
-- [Bug Busters - Scrum Team](./BUG_BUSTERS.md)
+- [Contribuindo - BUG BUSTERS](./CONTRIBUTING.md)
 - [Código de Permanência](./CODE_OF_CONDUCT.md)
-- -> [Passos Futuros](#passos-futuros)
 
 ## Artefatos das Sprints
 
