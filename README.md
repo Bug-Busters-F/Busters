@@ -34,6 +34,15 @@ Equipe de desenvolvimento de TI
 - Documentação de desenvolvimento deverá ser lastreado no GitHub com todos os processos necessários para a fidelização do cliente
 - Manual do Usuário - Github
 - Guia de instalação - Git/Github
+- Recorrência do treinamento para o mesmo usuário
+- Sem limite de tempo de conclusão do treinamento
+- Página de Resultados incluindo os nomes, as opiniões e notas (1 a 5) de cada usuário sobre o treinametno, mantendo as opiniões passadas
+- Certificado de conclusão se houver aprovação no treinamento
+- Média de aprovação mínima é 70% e calculada da seguinte forma:
+  - Cada parte de conteúdo tem duas perguntas (em quiz) valendo 1 ponto cada. No total terão 12 perguntas nesse formato.
+  - O Exame terá 12 perguntas cada uma valendo 1 ponto.
+  - Média final = soma do pontos / 24.
+- Menu do header contendo cada título de conteúdo
 
 ### Prioridades
 
@@ -69,6 +78,8 @@ Apresentar:
 - Agradecimentos finais - com um **QR do GitHub do grupo**
 - **DICA DE OURO**: Você estará vendendo o produto - postura, tom de voz, foca na solução
 - Mostrar mais o produto
+- Linguagem corporal
+- Algumas respostas preparadas
 - Usar todo o tempo da apresentação - 5 min
 - Pensar na visão do cliente
 - Burndown chart, Backlog da Sprint

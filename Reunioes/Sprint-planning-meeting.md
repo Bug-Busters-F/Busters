@@ -50,3 +50,12 @@
 - Página exame: Salvar resultado no servidor 5
 - Página exame: Trazer resultado do Python  8
 - Página de Resultados de Exames: Trazer o resultado do servidor  8
+
+## Sprint 3
+
+- Consultar US 3ª Sprint
+
+### Próximos Passos
+
+- Construir a Jornada do Usuário -  *4a sprint*
+- UI: Animações, efeitos CSS  e icones nos elementos
