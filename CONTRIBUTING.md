@@ -18,8 +18,10 @@ Nosso projeto utiliza uma variedade de tecnologias para desenvolvimento e comuni
 - Discord
 - WhatsApp
 - Python v3
+- MySQL
 - HTML, CSS, JS com Bootstrap
 - Markdown
+- Draw.io
 
 ## Como começar
 
