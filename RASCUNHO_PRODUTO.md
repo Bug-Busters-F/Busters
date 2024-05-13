@@ -1,13 +1,109 @@
-# Rascunho do Produto e seu Product Backlog
+# Rascunho do Produto
+
+## Estrutura dos arquivos para conexão com o Banco de Dados
+
+Cada arquivo conterá funções para conexão com o BD
+
+```
+/databases
+    __init__.py
+    users.py
+    iterations.py
+    quizzes.py
+    exams.py
+```
+
+## Fluxos de Dados
+
+### Reconhecimento do usuário
+
+1. Usuário envia o seu e-mail
+   1. A aplicação identifica se o usuário possui cadastro
+      1. Se sim:
+         1. Retorna seu ID, nome e e-mail
+      2. Senão
+         1. Solicita seu nome
+2. O usuário envia o seu nome e e-mail
+   1. A aplicação identifica se o usuário possui cadastro
+      1. Se sim:
+         1. Retorna seu ID, nome e e-mail
+      2. Senão
+         1. O sistema cadastra o usuário
+         2. Cria uma *iteration* para o usuário com valores:
+            1. `iterations.is_finished` = `false`
+         3. Retorna o seu ID, nome e e-mail
+
+### Usuário abre um Quiz
+
+1. Usuário envia seu ID e o número (`quizzes.index`) do quiz
+2. O sistema identifica se o usuário possui uma iteração (`iterations`) não completa (utilizando `iterations.is_finished`)
+   1. Se sim, verifica se o usuário já possui o quiz respondido (`quizzes.index` com `iterations.id`)
+      1. Se sim:
+         1. Retorna as respostas registradas (`quizzes.users_answer`), sua nota (`quizzes.score`) e a data em que foi respondido (`quizzes.created_at`)
+      2. Senão
+          1. Retorna nada
+
+### Usuário envia uma resposta de Quiz
+
+1. Usuário envia seu ID, o número do quiz (`quizzes.index`), a sua resposta (`quizzes.users_answer`), e a sua nota (`quizzes.score`)
+2. O sistema identifica se o usuário possui uma iteração (`iterations`) não completa (utilizando `iterations.is_finished`)
+   1. Se sim
+      1. O sistema registra a resposta do quiz em `quizzes`
+         1. Retorna nada
+   2. Se não
+      1. O sistema retorna erro
+
+### Usuário envia uma resposta de exame
+
+1. Usuário envia seu ID, a sua resposta (`exams.users_answer`), sua nota (`exams.score`)
+2. O sistema identifica se o usuário possui uma iteração (`iterations`) não completa (utilizando `iterations.is_finished`)
+   1. Se sim
+      1. O sistema registra a resposta do exame
+      2. Calcula a média das notas do usuário
+      3. Registra a média das notas (`iterations.total_score`), a data de conclusão (`iterations.finished_at`), a iteração como conluída (`iterations.is_finished` = `true`)
+      4. O sistema pede a avaliação/review do usuário
+      5. O usuário envia o seu ID, a sua nota de avaliação (`iterations.review_score`) e o seu comentário de avaliação (`iterations.comment`)
+      6. O sistema registra a avaliação em `iterations`
+      7. Retorna a pontuação total (`iterations.total_score`)
+      8. Verifica se usuário foi aprovado nas avaliações:
+         1. Se sim
+            1. O sistema permite a impressão do certificado de conclusão
+         2. Senão
+            1. Mostra mensagem ao usuário para estudar e refazer as avaliações
+   2. Se não
+      1. O sistema retorna erro
+
+### Usuário abre a página de resultados de exames
+
+1. O sistema retorna todas as linhas da entidade `iterations` contendo
+   1. os nomes dos usuários (`users`),
+   2. os e-mails dos usuários (`users`),
+   3. as suas respectivas notas (`quizzes.score`) dos quizzes responsdidos,
+   4. as notas dos exames (`exams.score`),
+   5. a data de finalização, se houver, das iterações (`iterations.is_finished`)
+   6. a média das avaliações (`iterations.total_score`)
+
+### Usuário abre as avaliações/review de um usuário
+
+1. Usuário envia o ID do usuário
+2. O sistema retorna as review de todas as iterações do usuário (`iterations.review_score` e `iterations.review_comment`), a data de finalização da iteração (`iterations.finished_at`), a nota final (`iterations.total_score`), e o nome do usuário (`users.name`)
+
+### Usuário abre a página de reviews
+
+*Add ao Sprint Backlog*.
+
+1. O sistema retorna
+   1. todas as reviews feitas (`iterations.review_score` e `iterations.review_comment`),
+   2. o nome do usuário (`users.name`),
+   3. o e-mail do usuário (`users.email`),
+   4. a data de conclusão da iteração (`iterations.finished_at`)
+   5. a média das notas (`iterations.total_score`)
+
+---
 
 ## Rascunho do produto
 
-![mapa mental me círculos](./assets/sumario-interativo.png)
-
-- Página inicial com um sumário interativo semelhante a esse.
-- Páginas com conteúdos que explica Metodologia Ágil com Scrum
 - Breadcrumbs e botões **próximo** e **anterior** para navegação no conteúdo
-- Após cada seção de conteúdo, ter uma seção **Em Resumo** que sintetiza os conceitos apreendidos nessa seção. E ter uma seção **Na Prática** onde haverá um Exemplo Prático, ou seja, um caso numa empresa e um passo-a-passo de como aplicar o que foi aprendido nesse caso.
 - Ter uma seção para o **Quiz** que irá validar o conhecimento adquirido pelo usuário
 - Exames no final de todo o contéudo onde tirando a nota mínima, a pessoa receberá o badge
 - Mascote para o nosso curso:
@@ -17,78 +113,3 @@
     - Na Introdução da página principal, na seção que explica do que se trata esse site, podemos brincar dizendo que somos uma Academia de Scrum para Mulas onde temos o objetivo de transformá-las em experiente Scrum Busters (brincando com o nosso nome e os papéis de Scrum como Scrum Team, Scrum Master)
     - E usamos um método chamado Mule-Driven Development (MDD) no ensino das técnicas avançadas de Scrum, uma metodologia ágil....
       - Mule-Driven Development (MDD) - um jogo de palavras com "Test-Driven Development" e "Behavior-Driven Development", focando no desenvolvimento orientado por "mulas"
-
-### Definir um nome para o projeto
-
-- Scrum para Mulas - SPAM
-- Jornada da Mula Ágil
-- Agile Mule Academy
-- Mula Agile Quests: Apresenta a ideia de missões no aprendizado das metodologias ágeis
-- Agile Mula Busters
-
-## Rascunho Product Backlog
-
-### Sprint 1
-
-- Entrega: Protótipo
-- Ferramentas: Figma
-
-#### User Stories - SP1
-
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) da **página principal** para entender a apresentação do tema Scrum
-  - Header
-    - Logo do projeto
-    - Nome
-  - Main:
-    - Cover (imagem)
-    - Introdução
-    - Sumário com imagem
-    - Índice explicando cada ítem do sumário
-  - Footer
-    - Copryright
-    - Feito por Bug Busters com link para GitHub
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) da **página de conteúdo** para entender a apresentação do conteúdo
-  - Header
-    - *da página principal*
-    - Navegação: Home, Voltar e Próximo, Exame, Resultados
-  - Footer
-  - Main:
-    - Conteúdo estruturado em títulos e textos
-    - Seção Na Prática no final do conteúdo
-    - Seção Em Resumo após Na Prática
-    - Seção Quiz após Em Resumo - 5 perguntas de múltipla escolha
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) da **seção do Na Prática** para entender a apresentação do conteúdo
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) da **seção do Em Resumo** para entender a apresentação do conteúdo
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) a **seção de quiz** para entender como será validado o entendimento dos usuários
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) da **página do exame** para entender como será aplicado o exame
-  - Header
-  - Footer
-  - Main:
-    - Nome do participante
-    - 20 perguntas de múltipla escolha sobre todo o conteúdo
-    - Formulário que irá enviar essas perguntas com o nome do participante para o banco de dados
-    - Seção que mostra a nota do participante com ou sem badge com link para o a lista de resultados
-    - Após o envio das questões ao servidor, mostrar quais questões estão corretas e quais estão incorretas com um link para o tópico correspondente
-    - Botão para refazer o teste
-- Como o cliente que requisita a aplicação, quero entender a interface de usuário (UI) da **página de resultados rankeados** para conhecer a pontuação dos usuários participantes
-  - Header
-  - Footer
-  - Main:
-    - Lista de resultados gravados dos exames feitos por participantes em ordem decrescente das notas
-
-### Sprint 2
-
-- Entregas: interface de usuário, conteúdo
-- Ferramentas: VScode, HTML, CSS, Git e GitHub
-
-#### User Stories - SP2
-
-### Sprint 3
-
-- Entrega: interface, conteúdo detalhados e quiz
-- Ferramentas: VScode, HTML, CSS, Git, GitHub, Python e MySQL
-
-### Sprint 4
-
-- Entrega: conteúdo, quiz e correções
-- Ferramentas: VScode, HTML, CSS, Git, GitHub, Python e MySQL
