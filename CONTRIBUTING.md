@@ -131,11 +131,10 @@ cd scrum-academy/
 
 ### 3. Configurar o ambiente virtual
 
-Dentro do diretório do projeto, navegue até a pasta `src` e crie um ambiente virtual usando venv.
+Dentro do diretório do projeto, na pasta raiz, crie um ambiente virtual usando venv.
 
 ```sh
 # Criar um ambiente virtual
-cd src/
 python -m venv venv
 
 
@@ -153,7 +152,7 @@ pip install -r requirements.txt
 
 ```sh
 # rodar o projeto localmente
-flask run --debug
+flask run
 # abra http://localhost:5000 no navegador
 ```
 
@@ -165,7 +164,21 @@ Depois de [configurar](#como-começar) tudo direitinho, você vai estar pronto p
 
 ### 1. Branching
 
-Lembre-se de não enviar commits diretamente para o branch principal. Isso é essencial para manter a organização e integridade do nosso projeto. Ao iniciar um novo trabalho, crie um branch separado a partir do branch principal - ou utilize um já existente apropriado para o desenvolvimento.
+Lembre-se de não enviar commits diretamente para o branch principal. Isso é essencial para manter a organização e integridade do nosso projeto. Ao iniciar um novo trabalho, crie um branch separado a partir do branch de desenvolvimento - ou utilize um já existente apropriado para o desenvolvimento. Você pode seguir as seguintes sugestões de nomes:
+
+#### Quais nomes para os novos branches?
+
+`feature/<nome-do-recurso>` para criar um novo recurso
+
+More Examples:
+
+- `feat` or `feature`: (new feature for the user, not a new feature for build script)
+- `fix`: (bug fix for the user, not a fix to a build script)
+- `docs`: (changes to the documentation)
+- `style`: (formatting, missing semi colons, etc; no production code change)
+- `refactor`: (refactoring production code, eg. renaming a variable)
+- `test`: (adding missing tests, refactoring tests; no production code change)
+- `chore`: (updating grunt tasks etc; no production code change)
 
 ```sh
 # Ver branch ativo
@@ -174,6 +187,9 @@ git branch
 
 # Troca para o branch 'dev'
 git checkout dev
+
+# Criar um novo branch e troca para ele
+git checkout -b <nome-do-branch> # Ex: feature/quizzes
 ```
 
 ### 2. Fazer Commit
@@ -216,25 +232,78 @@ Há dois repos com os quais estamos trabalhando:
 2. O repo local (na sua máquina) que é uma cópia do repo remoto.
 
 ```sh
-# Garanta que você está no branch 'dev'
+# Garanta que você está no branch que você criou
 # ver Branches
 
-# Atualiza o repo local - puxa do repo remoto os últimos commits
-git pull
-# se aparecer uma mensagem sobre conflito, grita.
+git push -u origin <nome-do-branch>
+```
 
-# Envia seus novos commits para o repo remoto
-git push
+### 4. Criar um Pull Request (PR)
+
+Se tudo estiver pronto para fazer merge no branch de desenvolvimento, abra o GitHub e crie um **Pull Request**.
+
+1. Abra o repositório pela interface do GitHub
+2. Clica na aba **Pull Request**
+3. Aperta no botão  **New Pull Request**
+4. Seleciona o branch `dev` à esquerda e **o seu branch** à direita
+5. Aperta em **Create Pull Request**
+6. Escreve uma mensagem sobre as modificações feitas e aperta em **Create Pull Request**
+7. Agora, alguém irá validar as suas modificações
+8. Após a aprovação de outro integrante, você poderá fazer Merge
+9. Se tiver confilitos, você pode resolver apertando em **Resolve conflicts**
+
+#### 4.1. VALIDAR UM PULL REQUEST
+
+Se outro integrante criar um Pull Request, você pode **aprovar** (se estiver pronto para fazer merge) ou **sugerir melhorias** (para o autor aprimorar o projeto). Os dois tópicos a seguir indicam como realizar essas operações.
+
+##### REVIEW A PULL REQUEST
+
+1. On the pull request, click Files changed.
+2. Click Review changes.
+3. Add a comment on your initial thoughts
+4. Select comment, approve or request changes on the pull request.
+5. Click Submit review.
+
+##### SUGGEST CHANGES
+
+1. On the pull request, click **Files changed**.
+2. Find the `index.html` changes.
+3. Hover your cursor next to the line numbers on the left side of the page.
+4. Click the blue plus icon.
+5. After the comment form appears, click the **Add a suggestion** button.
+
+    !https://user-images.githubusercontent.com/97056108/184449714-61e8ee51-824a-48c1-9436-2dfd67f2c070.png
+
+6. Edit the suggestion.
+7. Click **Add a single comment**.
+
+### 5. Após merge, excluir os branches
+
+Se tudo deu certo e você não vai mais precisar do branch que você criou, você pode apagar do repo remoto e do seu repo local.
+
+```sh
+# excluir branch do local
+git branch -d <nome-do-branch>
+
+# excluir branch do remote repo
+git push -d origin <nome-do-branch>
+
+# Se precisar excluir o branch sem ter feito o merge, use `-D` ao invés de `-d`. Mas CUIDADO porque isso irá apagar todos os commits dele.
 ```
 
 ### Resumo
 
-1. Faça suas modificações
-2. Pelo terminal, navegue até o diretório raiz do projeto
-3. Add modificações ao stage
-4. Commit essas modificações
-5. Git pull para trazer modificações do repo remoto
-6. Git push seus commits
+1. Crie um novo branch
+2. Faça suas modificações
+3. Pelo terminal, navegue até o diretório raiz do projeto
+4. Add modificações ao stage
+5. Commit essas modificações
+6. Push seu branch para o repo remoto
+7. Cria um PR
+8. Espera a Review de um membro da equipe
+9. Faça modificações, se forem sugeridas
+10. Faça o merge, quando tudo estiver pronto
+11. Exclua os branches do repo remoto e local, se não for mais os usar
 
 ## Code Styling
 
