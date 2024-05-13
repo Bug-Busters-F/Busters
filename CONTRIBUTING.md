@@ -274,7 +274,7 @@ Se outro integrante criar um Pull Request, você pode **aprovar** (se estiver pr
 4. Click the blue plus icon.
 5. After the comment form appears, click the **Add a suggestion** button.
 
-    !https://user-images.githubusercontent.com/97056108/184449714-61e8ee51-824a-48c1-9436-2dfd67f2c070.png
+    ![Ícone para add suggestion](https://user-images.githubusercontent.com/97056108/184449714-61e8ee51-824a-48c1-9436-2dfd67f2c070.png "Índice para add suggestion")
 
 6. Edit the suggestion.
 7. Click **Add a single comment**.
