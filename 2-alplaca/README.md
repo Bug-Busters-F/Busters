@@ -8,6 +8,7 @@ GitHub: [Bug Busters](https://github.com/Fatec-Bug-Busters/Busters.git) | Github
 
 ## Artefatos das Sprints
 
+- [Backlog do Produto](./Backlog%20do%20produto.xlsx)
 - [Sprint Backlog](https://bugbustersf.atlassian.net/)
 - Burndown [chart](https://bugbustersf.atlassian.net/)
 
