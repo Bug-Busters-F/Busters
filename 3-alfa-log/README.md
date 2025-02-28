@@ -1,6 +1,6 @@
 # API - Bug Busters
 
-GitHub: [Bug Busters](https://github.com/Bug-Busters-F/Busters.git) | Github do Produto: [Nome](https://github.com/Bug-Busters-F/)
+GitHub: [Bug Busters](https://github.com/Bug-Busters-F/Busters.git) | Github do Produto: [AlfaLog](https://github.com/Bug-Busters-F/alfalog)
 
 - [Contribuindo - BUG BUSTERS](../CONTRIBUTING.md)
 - [Código de Permanência](../CODE_OF_CONDUCT.md)
