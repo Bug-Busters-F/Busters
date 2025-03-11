@@ -49,10 +49,8 @@ Cards e gráficos.
 
 Os alunos deverão investigar as seguintes questões (se possível):
 
-- Análise Comparativa Regional: Como o desempenho comercial de um Estado se compara
-ao de outros?
-- Identificação  de  Mercados  Emergentes:  Quais  países  têm  aumentado  a  importação  de
-produtos específicos dos de cada Estado Brasileiros?
+- Análise Comparativa Regional: Como o desempenho comercial de um Estado se compara ao de outros?
+- Identificação  de  Mercados  Emergentes:  Quais  países  têm  aumentado  a  importação  de produtos específicos dos de cada Estado Brasileiros?
 - Geografia dos fluxos: Em quais localidades (Unidades de Receita Federal) são processas as
 Exportações de cada Estado?
 - Diversificação  de  Produtos:  Os  Estados  concentram  suas  exportações/importações  em
@@ -92,8 +90,69 @@ modelo de projeção futura?
 - React
 - Banco de Dados Relacional
 
-## Sugestões de Nomes
+---
 
-- MassaLog
-- AlfaLog
-- MassaExport
+- Gráfico dos estados brasileiros interativo que abrirá as inforamções do estado
+- Escolha no topo da página entre Exportação e Importação
+- Busca de dados de 2014 a 2024
+  - Exportação e importação
+  - UF e cidades
+  - NCM
+  - URF existentes
+- Filtragem
+- Gráficos
+- Mapa de Calor
+- Normalização dos Dados
+- Otimização (Estrutura de Dados e Algorítmos de Ordenação)
+
+---
+
+## Backlog do Produto
+
+User Stories:
+
+1. Como analista de dados quero fazer a limpeza dos dados de exportação e importação para que eu tenha somente dados válidos.
+2. Como profissional de logística quero ter um painel Web para que eu possa visualizar os dados.
+3. Como profissional de logística quero poder visualizar informações de importação e exportação de cada estado do Brasil para que eu possa analisá-los.
+4. Como profissional de logística quero poder escolher um estado brasileiro para que eu possa visualizar informações de importação e exportação de cada URF desse estado.
+5. Como profissional de logística quero poder escolher uma carga através do NCM para que eu possa visualizar informações de importação e exportação referente a cada tipo de carga.
+6. Como profissional de logística quero filtrar informações para conseguir analisar apenas as informações relevantes à minha busca.
+
+QT_ESTAT quant de estoque em certa unid de medidas
+
+## Resumo
+
+- Dados normalizados - MySQL
+  - Relatório da normalização (não precisa estar no sistema) - quantas linhas tirou pelo motivo X
+- dashboard - React/Web
+- gráficos interativos e indicadores em cards - JS/React
+  - Brasil
+    - Evolução histórica da balança comercial.
+    - Gráfico mostrando a tendência do Valor Agregado e do peso.
+    - Principais cargas movimentadas
+    - principais alfândegas para transferência de carga
+  - Brasil de cada estado
+    - mercados específicos atendemos (países destinos) fragmentados por estado
+    - principais alfândegas para transferência de carga
+    - Principais cargas movimentadas
+    - Ranking por valor agregado de exportação e importação
+    - Evolução histórica da balança comercial.
+    - Gráfico mostrando a tendência do Valor Agregado e do peso.
+  - Segmentação por estado mostrando de cada município (URF ?):
+    - Principais cargas movimentadas
+    - Ranking por valor agregado de exportação e importação
+    - Evolução histórica da balança comercial.
+    - Gráfico mostrando a tendência do Valor Agregado e do peso.
+  - Segmentação por NCM + filtros personalizados
+    - Número de cargas por vias utilizadas
+    - Gráfico mostrando a tendência do Valor Agregado e do peso.
+- filtragens
+- mapa de calor
+- Usuário fazer upload de dados (novo CSV)
+
+- Sprint 1 - mostrar dados de um ano
+- Automatizar os processos
+
+### Perguntas para o cliente
+
+- Na segmentação por estado mostrando de cada município, por ter muitos municípios, vamos mostrar uma tabela com os dados ou gostaria de mostrar as informações por UF?
