@@ -23,5 +23,6 @@ GitHub: [Bug Busters](https://github.com/Bug-Busters-F/Busters.git) | Github do 
 |  Team Member  | Vinicius Elias   |            [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ViniElias) |
 |  Team Member  | Allan Couto      |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/allancouto) |
 | Team Member | Humberto Ishii | [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/HumbertoIshii) |
+| Team Member | Fabio Misaki | [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/llWinter1z) |
 
 ![Bug Busters](../assets/bug-busters-logo-black.jpg)
