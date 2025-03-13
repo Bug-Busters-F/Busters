@@ -45,6 +45,8 @@ git checkout -b JRA-123-<branch-name>
 
 Tem um template que você pode baixar nesse [GitHub Gist](https://gist.github.com/WesleyGoncalves/c4d6799f26931e478e1b74a05c7f0a5a).
 
+Depois de baixar é só rodar esse comando pra configurar o git.
+
 ```sh
 git config --global commit.template caminho-para-o-arquivo/.git-commit-template
 ```
