@@ -43,6 +43,14 @@ git checkout -b <nome-do-branch> # Ex: feature/quizzes
 git checkout -b JRA-123-<branch-name>
 ```
 
+Tem um template que você pode baixar nesse [GitHub Gist](https://gist.github.com/WesleyGoncalves/c4d6799f26931e478e1b74a05c7f0a5a).
+
+```sh
+git config --global commit.template caminho-para-o-arquivo/.git-commit-template
+```
+
+Esse arquivo não pode ser excluído.
+
 ### 2. Fazer Commit
 
 Faça suas modificações e, em seguida, o seu commit.
